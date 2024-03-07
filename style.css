@@ -10,43 +10,86 @@ body {
     color: #fff;
 }
 
-.container  {
-    max-width: 960px;
-    margin: auto;
-    padding: 20px;
+header {
+    width: 100%;
+    height: 100vh;
+}
+.tittle  {
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container img{
+    width: 350px;
+}
+h1 {
+    font-size: 30px;
+    display: flex;
+    justify-content: start;
+}
+ .container p {
+    font-size: 20px;
 }
 
-header {
-    text-align: center;
-    padding: 50px 0;
-}
 nav ul{
+    width: 100%;
+    height: 10vh;
     display: flex;
     justify-content: center;
 }
 nav ul li{
-    padding: 8px;
+    padding: 20px;
+    font-size: 15px;
+    list-style: none;
 }
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.sobre-mi{
+    color: #000;
+    background: #fff;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20vh;
+}
+.sobre-mi h2{
+    padding-bottom: 30px;
+}
+.sobre-mi p{
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+
+
 
 h1, h2 {
-    font-weight: normal;
 }
 
-h1 {
-    margin-bottom: 10px;
-}
+
 
 h2 {
-    margin: 50px 0 20px;
 }
 
 p {
-    font-size: 1rem;
-    line-height: 1.6;
 }
 
 .sobre-mi, .mis-proyectos, .contactame {
-    margin-bottom: 40px;
 }
 
 .galeria-proyectos {
