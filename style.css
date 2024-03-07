@@ -26,7 +26,11 @@ header {
     justify-content: space-around;
 }
 .container img{
-    width: 350px;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 100%;
+    box-shadow: 0 0 30px #27c0a7;
 }
 h1 {
     font-size: 30px;
