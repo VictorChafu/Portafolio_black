@@ -25,6 +25,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-family: "Poppins";
 }
 .container img{
     width: 370px;
@@ -41,6 +42,33 @@ h1 {
  .container p {
     font-size: 20px;
 }
+@keyframes scale-up{
+    to {scale: 1.5;}
+}
+@keyframes fade-away{
+    to {opacity: 0;}
+}
+/**--------darle estilo apple-------*/
+.container{
+    view-timeline: --scroll;
+}
+.tittle p:first-child{
+    animation: fade-away both linear;
+    animation-timeline: --scroll;
+    animation-range: exit 30% exit 100%;
+}
+.tittle p:last-child{
+    animation:
+        scale-up both ease-in-out,
+        fade-away both linear;
+    animation-timeline: --scroll;
+    animation-range:
+        exit 0% exit 100%,
+        exit 50% exit 90%;
+}
+/**--------fin estilo apple-------*/
+
+
 nav{
     display: flex;
     align-items: center;
@@ -50,7 +78,9 @@ nav{
 nav img{
     display: flex;
     justify-content: center;
-    width: 8rem;
+    width: 6rem;
+    height: 8rem;
+    margin: 2rem;
 }
 
 nav ul{
@@ -59,7 +89,7 @@ nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 128px;
+    padding-right: 8rem;
 }
 nav ul li{
     padding: 20px;
@@ -84,6 +114,7 @@ main{
     align-items: center;
     justify-content: center;
     padding: 20vh;
+    font-family: "Roboto" ;
 }
 .sobre-mi h2{
     padding-bottom: 30px;
