@@ -17,6 +17,7 @@ header {
 .tittle  {
     display: flex;
     flex-direction: column;
+    padding-bottom: 90px;
 }
 .container{
     width: 100%;
@@ -26,10 +27,11 @@ header {
     justify-content: space-around;
 }
 .container img{
-    width: 260px;
-    height: 250px;
+    width: 370px;
+    height: 370px;
     padding: 20px;
-    filter: drop-shadow(0 0 30px #27c0a7); /*contorno con color en png*/
+    padding-bottom: 90px;
+    filter: drop-shadow(0 0 50px #27c0a7); /*contorno con color en png*/
 }
 h1 {
     font-size: 30px;
