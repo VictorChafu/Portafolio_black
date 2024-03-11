@@ -144,6 +144,10 @@ nav li :hover{
     border-radius: 3px;
     text-decoration: none;
 }
+.fa-brands, .fa-github{
+padding: 0;
+margin-right: 40px;
+}
 .wave{
     position: absolute;
     bottom: 0;
@@ -173,41 +177,96 @@ main{
     padding-right: 100px;
 }
 
-.mis-proyectos{
+.proyecto1{
     background: #131313;
+    display: flex;
+    
+    
 }
-
-
-.sobre-mi, .mis-proyectos, .contactame {
+.project1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .galeria-proyectos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px;
+    padding: 30px;
 }
 
-.proyecto {
-    margin-bottom: 15px;
+.proyecto1 {
+    width: 100%;
+    height: 50vh;
     text-align: center;
 }
 
-.proyecto img {
-    max-width: 100%;
-    height: auto;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    border: 3px solid #fff; /* Un pequeño borde para destacar las imágenes en el fondo oscuro */
+.proyecto{
+    padding: 10px;
 }
 .proyecto p{
+    padding-bottom: 15px;
+}
+.proyecto img {
+    width: 40%;
+    height: auto;
+    padding: 5px;
+    filter: drop-shadow(0 0 50px #27c0a7); /*contorno con color en png*/
+    border: 3px solid #fff; /* Un pequeño borde para destacar las imágenes en el fondo oscuro */
+}
+.project1 p{
     padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;   
+    text-align:left; 
 }
-.proyecto a{
+.proyecto1 a{
     background-color: #fff;
-    padding: 10px 20px;
+    padding: 3px 13px;
     color: #131313;
+    text-decoration: none;
 }
-
+.proyecto1 a:hover{
+    text-decoration: none;
+    background-color: #050a4e;
+    color: white;
+} 
+/*---------------------------------sombra 3d ------------------------*/
+.shadow-pop-tr {
+	-webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+ @-webkit-keyframes shadow-pop-tr {
+    0% {
+      -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+              box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+      -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+              box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+      -webkit-transform: translateX(-8px) translateY(8px);
+              transform: translateX(-8px) translateY(8px);
+    }
+  }
+  @keyframes shadow-pop-tr {
+    0% {
+      -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+              box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+      -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+              box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+      -webkit-transform: translateX(-8px) translateY(8px);
+              transform: translateX(-8px) translateY(8px);
+    }
+  }
+  /*---------------------------------sombra 3d ------------------------*/
+  
 a {
     color: #fff;
     text-decoration: none;
